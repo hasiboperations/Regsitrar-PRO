@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%2322d3ee' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 12c-6 0-12 4-12 12 0 0-10 4-10 12 0 10 8 12 8 12s-4 12 14 12c0 0 0-48 0-48z'/%3E%3Cpath d='M34 12c6 0 12 4 12 12 0 0 10 4 10 12 0 10-8 12-8 12s4 12-14 12c0 0 0-48 0-48z'/%3E%3Cline x1='34' y1='26' x2='46' y2='26'/%3E%3Ccircle cx='46' cy='26' r='3' fill='%2322d3ee' stroke='none'/%3E%3Cline x1='34' y1='40' x2='42' y2='40'/%3E%3Ccircle cx='42' cy='40' r='3' fill='%2322d3ee' stroke='none'/%3E%3Cline x1='30' y1='32' x2='18' y2='32'/%3E%3Ccircle cx='18' cy='32' r='3' fill='%2322d3ee' stroke='none'/%3E%3Cline x1='32' y1='12' x2='32' y2='52' stroke-width='3'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Registrar Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'slide-in-up': 'slide-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            boxShadow: {
+                'glow': '0 0 20px rgba(37, 99, 235, 0.35)',
+                'glow-lg': '0 0 40px rgba(37, 99, 235, 0.25)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      @keyframes slide-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out forwards;
+      }
+      .animate-slide-in-up {
+        animation: slide-in-up 0.5s ease-out forwards;
+      }
+      
+      /* Premium Smooth Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 9999px;
+        border: 2px solid #020617;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+
+      /* Glassmorphism Utilities */
+      .glass {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      .glass-card {
+        background: rgba(30, 41, 59, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom": "https://esm.sh/react-dom@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "mammoth": "https://esm.sh/mammoth@1.7.1",
+    "file-saver": "https://esm.sh/file-saver@2.0.5",
+    "docx": "https://esm.sh/docx@8.5.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.2.1/",
+    "nodemailer": "https://aistudiocdn.com/nodemailer@^7.0.11"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-950 text-slate-200 antialiased selection:bg-cyan-200 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6936eadbf66e3c1980b0be6c/1jbv8aqi0';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

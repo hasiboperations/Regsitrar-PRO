@@ -1,0 +1,7 @@
+{
+  "name": "Regsitrar PRO",
+  "description": "AI Registrar is a next-generation agentic AI system and an initiative of the Office of the Registrar. It automates critical academic processes, generates official documents instantly, and ensures strict policy compliance with speed, accuracy, and professional excellence.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
